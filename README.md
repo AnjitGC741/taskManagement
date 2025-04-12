@@ -106,7 +106,7 @@ Collaborators invited:
     ray@ebpearls.com.au
 
 📊 Features Summary
-  ✅ Create, read, update, and delete tasks
+  ✅ Create, read, update, and delete tasks </br>
   ✅ Get tasks with filters, pagination, and sorting
   ✅ Validate user inputs using Joi
   ✅ RESTful routing with modular code structure
