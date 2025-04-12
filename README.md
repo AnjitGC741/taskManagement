@@ -76,42 +76,40 @@
       "status": "completed"
     }
     
-🧾 MongoDB Schema
+## 🧾 MongoDB Schema
     {
       title: { type: String, required: true },
       description: { type: String, required: true },
       status: { type: String, enum: ['pending', 'in-progress', 'completed'], default: 'pending' },
       createdAt: { type: Date, default: Date.now }
     }
-✅ Input Validation (Joi)
+## ✅ Input Validation (Joi)
     title: required string
     description: required string
     status: optional string, must be one of pending, in-progress, or completed
 
-🌍 Deployment
+## 🌍 Deployment
   The API is deployed on Render:
   https://taskmanagement-1yg0.onrender.com/api/task
 
-📄 .env.example
+## 📄 .env.example
 PORT=5000
 MONGODB_URI=mongodb+srv://anjitgc:anzzit*****@cluster0.dssrlm6.mongodb.net/Tasks
 
-📤 Submission
-    Deployed URL: 
-    
-    https://taskmanagement-1yg0.onrender.com/api/task
+## 📤 Submission
+   Deployed URL: https://taskmanagement-1yg0.onrender.com/api/task
 
 Collaborators invited:
     hr@ebpearls.com.au
     ray@ebpearls.com.au
 
-📊 Features Summary
+## 📊 Features Summary
   ✅ Create, read, update, and delete tasks </br>
-  ✅ Get tasks with filters, pagination, and sorting
-  ✅ Validate user inputs using Joi
-  ✅ RESTful routing with modular code structure
-  ✅ PATCH endpoint for updating status only
-  ✅ Deployed online and ready to use
+  ✅ Get tasks with filters, pagination, and sorting </br>
+  ✅ Validate user inputs using Joi </br>
+  ✅ RESTful routing with modular code structure </br>
+  ✅ PATCH endpoint for updating status only </br>
+  ✅ Deployed online and ready to use </br>
 
-👨‍💻 Author
+## 👨‍💻 Author
 GitHub: AnjitGC741
