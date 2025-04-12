@@ -5,7 +5,10 @@ export const connectToDB = async ()=>{
     const connectionUrl = env.connectionString;
     if(connectionUrl){
         try {
-            await mongoose.connect(connectionUrl);
+            await mongoose.connect(connectionUrl,{
+                serverSelectionTimeoutMS: 30000,
+                maxPoolSize: 10,
+            });
             console.log('Connected to database successfully.')
         } catch (error) {
             console.log(error);
