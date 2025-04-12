@@ -33,13 +33,14 @@
   1. POST /task/create
     Create a new task.  
     Request Body:
+
     {
       "title": "Finish Assignment",
       "description": "Complete the backend traineeship task",
       "status": "pending"
     }
 
-  2.  GET /task
+  3.  GET /task
      Get all tasks with optional filtering, pagination, and sorting.
      Query Parameters:
      page (default: 1)
@@ -57,21 +58,24 @@
   4. PUT /task/:id
     Update the entire task.
     Request Body:
+
     {
       "title": "Updated Task Title",
       "description": "Updated Task Description",
       "status": "in-progress"
-  
     }
-  5. DELETE /task/:id
+    
+  6. DELETE /task/:id
     Delete a task by ID.
 
-  6. PATCH /task/status/:id
+  7. PATCH /task/status/:id
     Update only the status of a task.
     Request Body:
+
     {
       "status": "completed"
     }
+    
 🧾 MongoDB Schema
     {
       title: { type: String, required: true },
@@ -93,7 +97,9 @@ PORT=5000
 MONGODB_URI=mongodb+srv://anjitgc:anzzit*****@cluster0.dssrlm6.mongodb.net/Tasks
 
 📤 Submission
-    Deployed URL: https://taskmanagement-1yg0.onrender.com/api/task
+    Deployed URL: 
+    
+    https://taskmanagement-1yg0.onrender.com/api/task
 
 Collaborators invited:
     hr@ebpearls.com.au
